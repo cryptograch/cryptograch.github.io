@@ -54,6 +54,7 @@ input, button {
 .bigInner {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .banner_title {
   margin: 0;
@@ -323,6 +324,56 @@ input, button {
   border: 1px solid #fff;
   padding: 10px;
 }
+.review {
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 2px solid #dedede;
+  padding-bottom: 40px;
+}
+.container {
+  max-width:500px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.slideshow_wrapper {
+  max-width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.slideshow {
+  max-width: 1000px;
+  margin: 0 0 0 -1000px;
+ position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration:10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+   -webkit-animation-play-state: running;
+}
+.slide {
+  min-width:500px;
+  min-height: 270px;
+  position:relative;
+  float:left;
+  overflow:hidden;
+}
+.slideshow img{
+  width: 500px;
+  min-height: 270px;
+}
+@-webkit-keyframes slide_animation {
+  0% {left:0px;}
+  10% {left:500px;}
+  20% {left:500px;}
+  30% {left:500px;}
+  40% {left:500px;}
+  50% {left:500px;}
+  60% {left:500px;}
+  70% {left:1000px;}
+  80% {left:1000px;}
+  90% {left:1000px;}
+  100% {left:1000px;}
+}
 .section-roadmap {
 	padding-top: 10px;
 	background-color: #fefefe;
@@ -553,7 +604,41 @@ footer span {
    .pay .bigInner {
      font-size: 0.9rem;
    }
+   .slideshow_wrapper {
+     max-width: 350px;
+     height: 350px;
+     margin: 0 20%;
+   }
+   .slideshow img{
+     width: 270px;
+   }
+   @-webkit-keyframes slide_animation {
+     0% {left:0px;}
+     10% {left:390px;}
+     20% {left:390px;}
+     30% {left:390px;}
+     40% {left:390px;}
+     50% {left:390px;}
+     60% {left:390px;}
+     70% {left:900px;}
+     80% {left:900px;}
+     90% {left:900px;}
+     100% {left:900px;}
+   }
+   .slide > div {
+     margin: 0 auto;
+   }
    .section-roadmap__list-item-description {
      padding: 0 20px;
    }
+}
+@media only screen and (max-width: 475px) {
+  .slideshow_wrapper {
+    margin: 0 11%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .slideshow_wrapper {
+    margin: 0 3%;
+  }
 }
