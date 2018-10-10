@@ -330,49 +330,28 @@ input, button {
   border-bottom: 2px solid #dedede;
   padding-bottom: 40px;
 }
-.container {
-  max-width:500px;
-  margin: 0 auto;
+.slider {
   padding-top: 40px;
 }
-.slideshow_wrapper {
-  max-width: 500px;
-  height: 500px;
+.slide_viewer {
+  height: 680px;
   overflow: hidden;
+  position: relative;
 }
-.slideshow {
-  max-width: 1000px;
-  margin: 0 0 0 -1000px;
- position: relative;
-  -webkit-animation-name: slide_animation;
-  -webkit-animation-duration:10s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-direction:alternate;
-   -webkit-animation-play-state: running;
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
 }
 .slide {
-  min-width:500px;
-  min-height: 270px;
-  position:relative;
-  float:left;
-  overflow:hidden;
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  min-width: 0;
 }
-.slideshow img{
-  width: 500px;
-  min-height: 270px;
-}
-@-webkit-keyframes slide_animation {
-  0% {left:0px;}
-  10% {left:500px;}
-  20% {left:500px;}
-  30% {left:500px;}
-  40% {left:500px;}
-  50% {left:500px;}
-  60% {left:500px;}
-  70% {left:1000px;}
-  80% {left:1000px;}
-  90% {left:1000px;}
-  100% {left:1000px;}
+.slide:first-child {
+  display: block;
 }
 .section-roadmap {
 	padding-top: 10px;
@@ -548,6 +527,10 @@ footer span {
       margin: 0 auto;
       margin-top: 30px;
     }
+    .slide img {
+      width: 100%;
+      text-align: center;
+    }
 }
 @media only screen and (max-width: 516px) {
   .banner {
@@ -604,41 +587,10 @@ footer span {
    .pay .bigInner {
      font-size: 0.9rem;
    }
-   .slideshow_wrapper {
-     max-width: 350px;
-     height: 350px;
-     margin: 0 20%;
-   }
-   .slideshow img{
-     width: 270px;
-   }
-   @-webkit-keyframes slide_animation {
-     0% {left:0px;}
-     10% {left:390px;}
-     20% {left:390px;}
-     30% {left:390px;}
-     40% {left:390px;}
-     50% {left:390px;}
-     60% {left:390px;}
-     70% {left:900px;}
-     80% {left:900px;}
-     90% {left:900px;}
-     100% {left:900px;}
-   }
-   .slide > div {
-     margin: 0 auto;
-   }
    .section-roadmap__list-item-description {
      padding: 0 20px;
    }
-}
-@media only screen and (max-width: 475px) {
-  .slideshow_wrapper {
-    margin: 0 11%;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .slideshow_wrapper {
-    margin: 0 3%;
-  }
+   .slide_viewer {
+     height: 380px;
+   }
 }
