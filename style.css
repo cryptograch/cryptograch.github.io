@@ -249,6 +249,29 @@ input, button {
   max-width: 200px;
   width: 100%;
 }
+.panorama {
+  border-bottom: 2px solid #dedede;
+  padding-bottom: 40px;
+}
+.panorama .yellow_border {
+  margin-bottom: 40px;
+}
+.flexPanorama {
+  display: flex;
+  justify-content: space-around;
+}
+.panoramaFrame {
+  display: block;
+  margin: 0 auto;
+}
+.panoramaFrame iframe {
+  width: 470px;
+  height: 350px;
+}
+.panoramaFrame h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 .team__p {
   font-size: 1.4rem;
   text-align: center;
@@ -454,6 +477,9 @@ footer span {
     width: 100%;
     min-height: 300px;
   }
+  .flexPanorama {
+    flex-direction: column;
+  }
 }
 @media (min-width: 991px) {
 	.section-roadmap__list-item-description {
@@ -572,6 +598,9 @@ footer span {
    }
    .flexTeamItem {
      width: 300px;
+   }
+   .panoramaFrame iframe {
+     width: 280px;
    }
    .teamImg {
      max-width: 120px;
