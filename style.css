@@ -522,7 +522,7 @@ footer span {
 	}
 }
 @media only screen and (max-width: 800px) {
-  .bannerBtn {
+  .bannerBtn, .websiteBtn {
       font-size: 2rem;
   }
   .flexHowItWorks {
