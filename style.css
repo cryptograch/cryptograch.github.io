@@ -264,7 +264,7 @@ input, button {
   display: block;
   margin: 0 auto;
 }
-.panoramaFrame iframe {
+.framePano {
   width: 470px;
   height: 350px;
 }
@@ -599,7 +599,7 @@ footer span {
    .flexTeamItem {
      width: 300px;
    }
-   .panoramaFrame iframe {
+   .framePano {
      width: 280px;
    }
    .teamImg {
