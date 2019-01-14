@@ -223,7 +223,6 @@ input, button {
   margin: 0 auto;
 }
 .prototype {
-  border-bottom: 2px solid #dedede;
   padding-bottom: 60px;
 }
 .flex {
@@ -256,6 +255,30 @@ input, button {
 .getItOnImg {
   max-width: 200px;
   width: 100%;
+}
+.telegramBot {
+  text-align: center;
+  background-image: url(images/tg_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.7);
+  background-blend-mode: darken;
+  padding: 30px 0;
+  color: #fff;
+}
+.flexTg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.tg_logo {
+  max-width: 100px;
+}
+.telegramBot .websiteBtn {
+  margin: 0;
 }
 .panorama {
   border-bottom: 2px solid #dedede;
