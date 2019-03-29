@@ -1,4 +1,4 @@
-var deadline = new Date("march 1, 2019 12:00:00").getTime();
+var deadline = new Date("july 1, 2019 12:00:00").getTime();
 
 var x = setInterval(function() {
 
